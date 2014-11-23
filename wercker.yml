@@ -1,0 +1,46 @@
+box: wercker/ruby
+build:
+    steps:
+        - bundle-install
+        - script:
+            name: jekyll doctor
+            code: bundle exec jekyll doctor
+        - script:
+            name: generate staging site and run HTML Proofer
+            code: |-
+                bundle exec rake test
+                ls -l ./_staging
+        - create-file:
+            name: generate CNAME for github
+            filename: ./_staging/CNAME
+            content: ben.laplanche.co.uk
+    after-steps:
+        - wercker/email-notify:
+            from: ben@laplanche.co.uk
+            to: ben@laplanche.co.uk
+            username: $EMAIL_USER
+            password: $EMAIL_PASSWORD
+            host: $EMAIL_HOST
+deploy:
+    steps:
+        - script:
+            name: Configure git
+            code: |-
+                git config --global user.email "ben@laplanche.co.uk"
+                git config --global user.name "ben laplanche"
+                rm -rf .git
+        - script:
+            name: Deploy to github pages
+            cwd: ./_staging
+            code: |-
+                git init
+                git add .
+                git commit -m "deploy commit from $WERCKER_STARTED_BY"
+                git push -f $GITHUB_REMOTE master
+    after-steps:
+    - wercker/email-notify:
+        from: ben@laplanche.co.uk
+        to: ben@laplanche.co.uk
+        username: $EMAIL_USER
+        password: $EMAIL_PASSWORD
+        host: $EMAIL_HOST
