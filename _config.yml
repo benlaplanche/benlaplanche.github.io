@@ -22,7 +22,7 @@ author:
   bio: "I'm enthusiastic about all things related to product management, design thinking and being customer centric. I'm currently working for Pivotal and based in London, UK."
 
 # Contact form setings
-email: youremail@email.com
+email: ben+inboundcontact@laplanche.co.uk
 contact_page_description: "Horace theme comes with a contact form built-in. You can use this form with Formspree service and get up to 50 submissions for free. Also, you can easily switch to another service if you want."
 thankyou_page_description: "Your message has been successfully sent. We will contact you very soon!"
 
@@ -35,8 +35,10 @@ linkedin: 'ben-laplanche-6b227527'
 navigation:
   - text: About
     url: /about/
-  - text: Style Guide
-    url: /style-guide/
+  - text: Coaching
+    url: /coaching/
+  - text: Mentoring
+    url: /mentoring/
   - text: Contact Me
     url: /contact/
 
