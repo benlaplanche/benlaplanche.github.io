@@ -2,7 +2,6 @@
 name: 'Ben Laplanche'
 description: 'Ben is a Product Leader, Coach, Coffee Drinker & Purveyor of Puns, based in London UK'
 meta_description: "Ben is a Product Leader, Coach, Coffee Drinker & Purveyor of Puns, based in London UK"
-logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 baseurl: 
 production_url: https://ben.laplanche.co.uk 
