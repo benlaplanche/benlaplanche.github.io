@@ -15,14 +15,14 @@ ga_analytics: UA-141192246-1
 # Author
 author:
   name: 'Ben Laplanche'
-  image: 'authorimage.jpg'
+  image: 'Picture.png'
   greetings: 'Hi there!'
   description: "Ben is a Product Leader, Coach, Coffee Drinker & Purveyor of Puns, based in London UK."
   bio: "I'm enthusiastic about all things related to product management, design thinking and being customer centric. I'm currently working for Pivotal and based in London, UK."
 
 # Contact form setings
 email: ben+inboundcontact@laplanche.co.uk
-contact_page_description: "If you're interested in discussing one of the services that I offer, or would just like to ask a question then please get in touch! I'd love to hear from y'all"
+contact_page_description: "If you're interested in discussing coaching, or would just like to ask a question then please get in touch! I'd love to hear from y'all"
 thankyou_page_description: "Your message has been successfully sent. We will contact you very soon!"
 
 # Social links
@@ -36,8 +36,6 @@ navigation:
     url: /about/
   - text: Coaching
     url: /coaching/
-  - text: Mentoring
-    url: /mentoring/
   - text: Contact Me
     url: /contact/
 
