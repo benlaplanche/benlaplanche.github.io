@@ -1,0 +1,60 @@
+# Site
+repository: sproogen/resume-theme
+favicon: images/favicon.ico
+
+# Personal info
+name: Ben Laplanche
+title: 
+email: ben@laplanche.co.uk
+# website: www.github.com/sproogen/resume-theme
+
+# Social links
+twitter_username: ben_laplanche
+# github_username:  sproogen
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+# instagram_username: chillwildlife
+linkedin_username: benlaplanche
+# pinterest_username: jekyll
+# youtube_username: globalmtb
+# googleplus_username: +jekyll
+
+# About Section
+# about_title: About Me
+about_profile_image: images/profile.jpeg
+about_content: | # this will include new lines to allow paragraphs
+  Hi, my name's Ben and I partner with Product & Technology leaders to move from a place of fear and overwhelm to clarity and conscious awareness. 
+
+  My clients are purposeful leaders who care, who want to serve others and make an impact yet perhaps are feeling stuck and need a partner to define what leadership means for them in their life. 
+
+  Afterall leadership isn’t just a job title, but a calling to be an authentic human first and foremost, then forging relationships to help others
+
+  If this is you or you're just curious about what coaching is and whether it can be of use to you - please get in touch via e-mail, Linkedin or Twitter! 
+
+
+# Projects Section
+# projects_title: Projects
+
+# Experience Section
+# experience_title: Experience
+
+# Education Section
+# educaton_title: Education
+
+# More Section
+# more_title: A Little More About Me
+# more_content: | # this will include new lines to allow paragraphs
+
+# Footer
+footer_show_references: false
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
